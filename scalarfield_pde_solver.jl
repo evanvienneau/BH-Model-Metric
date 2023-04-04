@@ -82,6 +82,7 @@ domains = [r ∈ Interval(r_min, r_max),
 
 bcs = [phi(r,t_min) ~ phi0(r,t_min),
        phi(r_max,t) ~ 0,
+       Dr(phi(r_min,t)) ~ 1,
 
        Pphi(r,t_min) ~ Pphi0(r,t_min),
        Pphi(r_min,t) ~ 0,
